@@ -12,7 +12,7 @@ RUN wget https://github.com/jhead/phantom/releases/download/v${PHANTOM_VERSION}/
 RUN wget https://github.com/jhead/phantom/releases/download/v${PHANTOM_VERSION}/phantom-linux-x64
 RUN wget https://github.com/jhead/phantom/releases/download/v${PHANTOM_VERSION}/phantom-linux-arm8
 
-RUN chmod +x phantom-linux
+RUN chmod +x phantom-linux*
 
 RUN chmod +x entrypoint.sh
 
