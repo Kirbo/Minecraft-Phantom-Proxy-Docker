@@ -34,7 +34,7 @@ services:
 | Variable       | Required     | Description                                 |
 | -------------- | ------------ | ------------------------------------------- |
 | SERVER         | Required     | Bedrock/MCPE server IP address and port. <br>Example: `SERVER=192.168.1.5:19132` |
-| PHANTOM_ARCH   | Required     | CPU architecture where Phantom is being run. <br>Available Options: `x86`, `x64`, `arm8` <br>Example: `PHANTOM_ARCH=x86` |
+| PHANTOM_ARCH   | Required     | CPU architecture where Phantom is being run. <br>Available Options: `x86`, `x64`, `arm5`, `arm6`, `arm7`, `arm8` <br>Example: `PHANTOM_ARCH=x86` |
 | IPV6           | *Optional*   | Enables IPv6 support on port 19133. (experimental) <br>Pass `1` to enable this flag! <br>Example: `IPV6=1` |
 | BIND_IP        | *Optional*   | IP address to listen on. Defaults to all interfaces. <br>default: `BIND_IP=0.0.0.0` |
 | BIND_PORT      | *Optional*   | Port to listen on. Defaults to 0, which selects a random port. <br>Example: `BIND_PORT=19133` |
