@@ -1,6 +1,6 @@
 #!/bin/bash
 
-command=( "/app/phantom-linux -server ${SERVER}" )
+command=( "/app/phantom-linux-${PHANTOM_ARCH} -server ${SERVER}" )
 
 if [[ -v IPV6 ]] && [ "$IPV6" == "1" ]; then
   command+=("-6")
@@ -30,7 +30,6 @@ if [[ -v WORKERS ]]; then
   command+=("-workers ${WORKERS}")
 fi
 
-
-echo "Startin proxy: ${command[@]}"
+echo "Starting proxy: ${command[@]}"
 
 eval ${command[@]}
