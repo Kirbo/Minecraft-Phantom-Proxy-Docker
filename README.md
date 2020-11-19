@@ -14,7 +14,8 @@ Or with docker compose:
 version: '3.4'
 services:
   phantom-proxy:
-    image: torqdl/minecraft-phantom-proxy:latest
+    build:
+      context: https://github.com/TORQDL/Minecraft-Phantom-Proxy-Docker.git
     container_name: phantom-proxy
     environment:
       - SERVER=example.com:19132
