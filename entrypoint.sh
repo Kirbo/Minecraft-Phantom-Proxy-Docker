@@ -1,6 +1,6 @@
 #!/bin/bash
 
-command=( "/app/phantom-linux-${PHANTOM_ARCH} -server ${SERVER}" )
+command=("/app/phantom-linux-${PHANTOM_ARCH} -server ${SERVER}")
 
 if [[ -v IPV6 ]] && [ "$IPV6" == "1" ]; then
   command+=("-6")
