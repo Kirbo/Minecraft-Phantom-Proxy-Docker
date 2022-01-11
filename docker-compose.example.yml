@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  phantom-proxy:
+    image: kirbownz/phantom-docker:latest
+    container_name: phantom-proxy
+    environment:
+      - SERVER=example.server-address.com:19132
+      - PHANTOM_ARCH=arm7
+    volumes:
+      - "${PWD}/excluded.json:/app/excluded.json"
+    network_mode: host
+    restart: always
