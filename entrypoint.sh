@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 command=("/app/phantom-linux-${PHANTOM_ARCH} -server ${SERVER}")
 
